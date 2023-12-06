@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.5), #014a1c), url(img/background.png);
+    background-size: cover;
+    background-position: center;    
+    height: 100vh;
+}
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    font-size: 35px;
+    font-family: Arial;
+    color: white;
+    /* padding-left: 20px;
+    float: left; */
+}
+
+.banner-text{
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 130px;
+}
+
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Nova Square', sans-serif;
+}
+
+.banner-btn{
+    margin: 70px auto 0;
+}
+
+.banner-btn a{
+    margin: 150px auto 0;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
