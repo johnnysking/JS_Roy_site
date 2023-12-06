@@ -10,13 +10,13 @@
     height: 100vh;
 }
 .logo{
-    width: 140px;
+    width: 280px;
     position: absolute;
     top: 4%;
     left: 3%;
-    font-size: 35px;
+    /* font-size: 35px;
     font-family: Arial;
-    color: white;
+    color: white; */
     /* padding-left: 20px;
     float: left; */
 }
