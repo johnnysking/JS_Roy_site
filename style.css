@@ -182,4 +182,18 @@ nav ul li{
 
 .features-img img{
     width: 70%;
+    border-radius: 50px;
+}
+
+.features h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #014a1c;
+}
+
+.features-description{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
 }
