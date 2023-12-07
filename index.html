@@ -25,5 +25,39 @@
             </div>
         </div>
     </section>
+
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#"></a>HOME</li>
+                <li><a href="#"></a>FEATURES</li>
+                <li><a href="#"></a>SERVICES</li>
+                <li><a href="#"></a>TESTIMONIALS</li>
+                <li><a href="#"></a>MEET US</li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="img/menuOpen.png" id="menu" alt=""> <!-- Menu Squared icon by Icons8 -->
+    </div>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sidenav = document.getElementById("sidenav");
+        var menu = document.getElementById("menu");
+
+        sidenav.style.right = "-250px";
+
+        menuBtn.onclick = function(){
+            if (sidenav.style.right == "-250px"){
+                sidenav.style.right = "0";
+                // menu.src = "img/menuClose.png";
+            }
+            else{
+                sidenav.style.right = "-250px";
+                // menu.src = "img/menuOpen.png";
+            }            
+        }
+    </script>
 </body>
 </html>
