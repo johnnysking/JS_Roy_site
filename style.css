@@ -4,7 +4,8 @@
 }
 
 #banner{
-    background: linear-gradient(rgba(0,0,0,0.5), #014a1c), url(img/background.png);
+    background: linear-gradient(rgba(255, 255, 255, 0.3), #000000), url(img/TimeToDisco\(32\)_5.png);
+    /* background: url(img/TimeToDisco\(32\)_5.png); */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -23,11 +24,13 @@
 
 .banner-text{
     text-align: center;
-    color: white;
+    text-decoration:underline;
+    color: rgb(0, 0, 0);
     padding-top: 180px;
 }
 .banner-text h1{
     font-size: 130px;
+    font-family: 'Nova Square', sans-serif;
 }
 
 .banner-text p{
@@ -46,9 +49,9 @@
     display: inline-block;
     margin: 10px 10px;
     padding: 12px 12px;
-    color: #fff;
+    color: #000000;
     font-family: 'Nova Square', sans-serif;
-    border: .5px solid #fff;
+    border: .5px solid #000000;
     position: relative;
     z-index: 1;
 }
@@ -69,7 +72,7 @@
 }
 
 .banner-btn a:hover{
-    color: #014a1c;
+    color: #000000;
 }
 
 #sidenav{
@@ -78,10 +81,35 @@
     position: fixed;
     right: -250px;
     top: 0;
-    background: #014a1c;
+    /* background: #5e5d5d; */
     z-index: 2;
-    transition: 0.5s;
+    /* transition: 0.5s; */
+    background-image: linear-gradient(to bottom,#000000, #5e5d5d);
+    /* transition: background-position 5s; */
+    -webkit-animation: gradientAnimation 5s ease infinite;
+    animation: gradientAnimation 5s ease infinite;
 }
+/* #sidenav:hover {
+    background-position: 0% 100%;
+  } */
+
+@keyframes gradientAnimation {
+    from {
+      background-position: 0% 0%;
+    }
+    to {
+      background-position: 0% 100%;
+    }
+  }
+  
+  @-webkit-keyframes gradientAnimation {
+    from {
+      background-position: 0% 0%;
+    }
+    to {
+      background-position: 0% 100%;
+    }
+  }
 
 nav ul li{
     list-style: none;
@@ -89,6 +117,20 @@ nav ul li{
 }
 
 nav ul li{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:active {
+    text-decoration: underline;
+}
+
+nav ul li a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
     text-decoration: none;
     color: white;
 }
@@ -136,7 +178,7 @@ nav ul li{
 .title-text p {
     margin: auto;
     font-size: 20px;
-    color: #014a1c;
+    color: #000000;
     font-weight: bold;
     position: relative;
     z-index: 1; 
@@ -147,7 +189,7 @@ nav ul li{
     content: '';
     width: 50px;
     height: 35px;
-    background: linear-gradient(#014a1c, #fff);
+    background: linear-gradient(#000000, #fff);
     position: absolute;
     top: -20px;
     left: 0;
@@ -189,7 +231,7 @@ nav ul li{
     text-align: left;
     margin-bottom: 10px;
     font-weight: 100;
-    color: #014a1c;
+    color: #000000;
 }
 
 .features-description{
@@ -197,3 +239,27 @@ nav ul li{
     align-items: center;
     margin-bottom: 40px;
 }
+
+/* -----------------------------------------------------------------------------------------------------*/
+
+.center-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Set the height to 100% of the viewport height */
+    }
+    .service {
+      height: 200px;
+      border: 2px solid #ffffff;
+      border-radius: 10%;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      width: 400px;
+      height: 400px;
+    }
+    .text-wrap-custom {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
