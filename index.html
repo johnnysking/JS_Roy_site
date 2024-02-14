@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
     <section id="banner">
@@ -30,11 +32,11 @@
     <div id="sidenav">
         <nav>
             <ul>
-                <li><a href="#"></a>HOME</li>
-                <li><a href="#features"></a>FEATURES</li>
-                <li><a href="#"></a>SERVICES</li>
-                <li><a href="#"></a>TESTIMONIALS</li>
-                <li><a href="#"></a>MEET US</li>
+                <li><a href="#banner" onclick="scrollToSection('banner')">HOME</a></li>
+                <li><a href="#features" onclick="scrollToSection('features')">FEATURES</a></li>
+                <li><a href="#services" onclick="scrollToSection('services')">SERVICES</a></li>
+                <li><a href="#" onclick="scrollToSection('features')">PORTFOLIO</a></li>
+                <li><a href="#contact" onclick="scrollToSection('contact')">CONTACT</a></li>
             </ul>
         </nav>
     </div>
@@ -71,7 +73,67 @@
             <div class="features-img">
                 <img src="img/profilePic.png" alt="">
             </div>
+        </div>        
+    </section >
+    <!-- Services -->    
+    <section id="services" style="background-color: black;">
+        <div>
+            <h2 class="text-center">Services</h2>
         </div>
+        <div class="container center-content">
+            <div>
+              <div class="">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="service">
+                      <img src="img/TimeToDisco(32)_5.png" alt="" class="img-fluid">
+                      <h3>Conception de sites web</h3>
+                      <p>Sites web modernes, adaptés à tous les appareils, offrant une expérience utilisateur optimale.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="service">
+                        <img src="img/TimeToDisco(32)_5.png" alt="" class="img-fluid">
+                      <h3>Développement d'applications web</h3>
+                      <p>Création sur mesure pour répondre à vos besoins spécifiques, avec une expérience utilisateur intuitive et performante.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="service">
+                        <img src="img/TimeToDisco(32)_5.png" alt="" class="img-fluid">
+                      <h3>Création de sites e-commerce</h3>
+                      <p class="text-wrap-custom">Explorez de nouvelles possibilités avec notre service de création de sites e-commerce, offrant une expérience d'achat fluide et sécurisée pour vos clients.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="service">
+                        <img src="img/TimeToDisco(32)_5.png" alt="" class="img-fluid">
+                      <h3>Maintenance et support technique</h3>
+                      <p class="text-wrap">Assurez la stabilité et la performance de votre site web grâce à notre service de maintenance et de support technique fiable et réactif.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="container">
+            <div>
+                <h2 class="text-center">Contact</h2>
+            </div>
+        </section> 
+        <section id="contact" class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <p style="color: #ffffff;">copyright Johnny S King</p>
+                </div>
+            </footer>
+        </section>       
     </section>
 
     <script>
@@ -91,6 +153,19 @@
                 // menu.src = "img/menuOpen.png";
             }            
         }
+
+        function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+
+//     function toggleUnderline(link) {
+//     var allLinks = document.querySelectorAll('#sidenav nav ul li a');
+//     allLinks.forEach(function(item) {
+//         item.classList.remove('active');
+//     });
+//     link.classList.add('active');
+// }
     </script>
 </body>
 </html>
