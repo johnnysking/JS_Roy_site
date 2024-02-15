@@ -14,16 +14,13 @@
 </head>
 <body>
     <section id="banner">
-        <img src="img/logo.png" class="logo position-fixed" alt="">
-        <!-- <div class="icon">
-            <h2 class="logo">.JS Roy</h2>
-        </div> -->
+        <img src="img/logo.png" class="logo position-fixed" alt="">        
         <div class="banner-text">
             <h1>Johnny S King</h1>
             <p>web developer</p>
             <div class="banner-btn">
-                <a href="#"><span></span>Find out</a>
-                <a href="#"><span></span>Read more</a>
+                <a href="#features" onclick="scrollToSection('features')"><span></span>Discover</a>
+                <a href="#contact" onclick="scrollToSection('contact')"><span></span>Contact</a>
 
             </div>
         </div>
@@ -32,7 +29,7 @@
     <div id="sidenav">
         <nav>
             <ul>
-                <button id="darkModeToggle" class="btn btn-primary">Toggle Dark Mode</button>
+                <button id="darkModeToggle" class="btn btn-dark mt-5">Light/Dark</button>
 
                 <li><a href="#banner" onclick="scrollToSection('banner')">HOME</a></li>
                 <li><a href="#features" onclick="scrollToSection('features')">FEATURES</a></li>
@@ -46,10 +43,8 @@
         <img src="img/menuOpen.png" id="menu" alt=""> <!-- Menu Squared icon by Icons8 -->
     </div>
 
-    <section class="img-section2">
-        <div class="img-section2">
-            
-        </div>
+    <section>
+        <div class="img-section2"></div>
     </section>
 
     <!-- features -->
@@ -62,7 +57,7 @@
         <div class="features-box">
             <div class="features">
                 <h1>
-                    Experienced Web Dev
+                    Web Dev
                 </h1>
                 <div class="features-description">
                     <div class="features-icon">
@@ -86,7 +81,7 @@
     <!-- Services -->    
     <section id="services" style="background-color: black;">
         <div>
-            <h2 class="text-center">Services</h2>
+            <h2 class="text-center" style="color: #ffffff;">Services</h2>
         </div>
         <div class="container center-content">
             <div>
@@ -101,7 +96,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="service">
-                        <img src="img/TimeToDisco(32)_5.png" alt="" class="img-fluid">
+                        <img src="img/TimeToDisco(32)_13.png" alt="" class="img-fluid">
                       <h3>Développement d'applications web</h3>
                       <p>Création sur mesure pour répondre à vos besoins spécifiques, avec une expérience utilisateur intuitive et performante.</p>
                     </div>
@@ -113,14 +108,14 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="service">
-                        <img src="img/TimeToDisco(32)_5.png" alt="" class="img-fluid">
+                        <img src="img/TimeToDisco(32)_11.png" alt="" class="img-fluid">
                       <h3>Création de sites e-commerce</h3>
                       <p class="text-wrap-custom">Explorez de nouvelles possibilités avec notre service de création de sites e-commerce, offrant une expérience d'achat fluide et sécurisée pour vos clients.</p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="service">
-                        <img src="img/TimeToDisco(32)_5.png" alt="" class="img-fluid">
+                        <img src="img/TimeToDisco(32)_12.png" alt="" class="img-fluid">
                       <h3>Maintenance et support technique</h3>
                       <p class="text-wrap">Assurez la stabilité et la performance de votre site web grâce à notre service de maintenance et de support technique fiable et réactif.</p>
                     </div>
@@ -132,13 +127,13 @@
         </div>
         <section class="container">
             <div>
-                <h2 class="text-center">Contact</h2>
+                <h2 class="text-center" style="color: #ffffff;">Contact</h2>
             </div>
         </section> 
         <section id="contact" class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                 <div class="col-md-4 d-flex align-items-center">
-                    <p style="color: #ffffff;">copyright Johnny S King</p>
+                    <p style="color: #ffffff;">copyright JS Roy</p>
                 </div>
             </footer>
         </section>       
@@ -154,11 +149,11 @@
         menuBtn.onclick = function(){
             if (sidenav.style.right == "-250px"){
                 sidenav.style.right = "0";
-                // menu.src = "img/menuClose.png";
+                menu.src = "img/menuClose.png";
             }
             else{
                 sidenav.style.right = "-250px";
-                // menu.src = "img/menuOpen.png";
+                menu.src = "img/menuOpen.png";
             }            
         }
 
@@ -166,15 +161,6 @@
         var section = document.getElementById(sectionId);
         section.scrollIntoView({ behavior: 'smooth' });
     }
-
-//     function toggleUnderline(link) {
-//     var allLinks = document.querySelectorAll('#sidenav nav ul li a');
-//     allLinks.forEach(function(item) {
-//         item.classList.remove('active');
-//     });
-//     link.classList.add('active');
-// }
-
 
     document.getElementById('darkModeToggle').addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
