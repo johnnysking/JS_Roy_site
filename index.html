@@ -29,7 +29,14 @@
     <div id="sidenav">
         <nav>
             <ul>
-                <button id="darkModeToggle" class="btn btn-dark mt-5">Light/Dark</button>
+                <!-- <button id="darkModeToggle" class="btn btn-dark mt-5">Light/Dark</button> -->
+                <button id="darkModeToggle" class="btn btn-dark mt-5">
+                    <span id="darkModeIcon" class="dark">&#9728;</span> <!-- Unicode character for a sun (light mode icon) -->
+                    <span id="lightModeIcon" class="light">&#9790;</span> <!-- Unicode character for a moon (dark mode icon) -->
+                </button>
+                
+                
+                
 
                 <li><a href="#banner" onclick="scrollToSection('banner')">HOME</a></li>
                 <li><a href="#features" onclick="scrollToSection('features')">FEATURES</a></li>
