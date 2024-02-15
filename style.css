@@ -4,8 +4,9 @@
 }
 
 #banner{
-    background: linear-gradient(rgba(255, 255, 255, 0.3), #000000), url(img/TimeToDisco\(32\)_5.png);
+    /* background: linear-gradient(rgba(255, 255, 255, 0.3), #000000), url(img/TimeToDisco\(32\)_5.png); */
     /* background: url(img/TimeToDisco\(32\)_5.png); */
+    background-color: #fff;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -263,3 +264,27 @@ nav ul li a:hover {
         white-space: nowrap;
         text-overflow: ellipsis;
       }
+
+      .img-section2{
+        background: linear-gradient(rgba(255, 255, 255, 0.3), #000000), url(img/TimeToDisco\(32\)_5.png);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+      }
+
+      /* Dark mode styles */
+/* body.dark-mode {
+    background-color: #333;
+    color: #fff;
+} */
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Dark mode styles for banner section */
+body.dark-mode #banner {
+    /* Add styles for the banner section in dark mode */
+    background-color: #222; /* Example dark background color */
+}

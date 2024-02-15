@@ -14,7 +14,7 @@
 </head>
 <body>
     <section id="banner">
-        <img src="img/logo.png" class="logo" alt="">
+        <img src="img/logo.png" class="logo position-fixed" alt="">
         <!-- <div class="icon">
             <h2 class="logo">.JS Roy</h2>
         </div> -->
@@ -32,6 +32,8 @@
     <div id="sidenav">
         <nav>
             <ul>
+                <button id="darkModeToggle" class="btn btn-primary">Toggle Dark Mode</button>
+
                 <li><a href="#banner" onclick="scrollToSection('banner')">HOME</a></li>
                 <li><a href="#features" onclick="scrollToSection('features')">FEATURES</a></li>
                 <li><a href="#services" onclick="scrollToSection('services')">SERVICES</a></li>
@@ -43,6 +45,12 @@
     <div id="menuBtn">
         <img src="img/menuOpen.png" id="menu" alt=""> <!-- Menu Squared icon by Icons8 -->
     </div>
+
+    <section class="img-section2">
+        <div class="img-section2">
+            
+        </div>
+    </section>
 
     <!-- features -->
 
@@ -166,6 +174,13 @@
 //     });
 //     link.classList.add('active');
 // }
+
+
+    document.getElementById('darkModeToggle').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
+
+
     </script>
 </body>
 </html>
